@@ -17,13 +17,14 @@ def math_operator():
     num2=request.json['num2']
 
     if operation=='add':
-        return num1+num2
+        result= num1+num2
     elif operation=='division':
-        return num1/num2
+        result= num1/num2
     elif operation=='multiplication':
-        return num1*num2
+        result= num1*num2
     else:
-        return num1-num2
+        result= num1-num2
+    return result
 
 
 if __name__=='__main__':
